@@ -24,7 +24,7 @@ const mongoose = require("mongoose");
 
 const dbUrl = "mongodb+srv://ps8907310:WA1wb9041Dh89jBX@cluster0.pxtuqkc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
-main().then(() => {
+main().then(() => { 
     console.log("Connected to DB");
 })
 .catch((err) => {
@@ -40,7 +40,7 @@ app.set("views",path.join(__dirname,"views"));
 app.use(express.urlencoded({extended:true}));
 app.use(methodOverride('_method'));
 app.engine('ejs' , ejsMate);
-app.use(express.static(path.join(__dirname,"/public")));
+app.use(express.static(path.join(__dirname,"public")));
 
 const store = MongoStore.create({
     mongoUrl: dbUrl,
