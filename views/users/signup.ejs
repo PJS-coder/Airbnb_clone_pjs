@@ -1,0 +1,24 @@
+<% layout("/layouts/boilerplate") %>
+<h2 class="col-6 offset-3" >SignUp on PJS </h2>
+<div class="row mt-3">
+    <div class="col-6 offset-3">
+        <form action="/signup" method="post" class="needs-validation" novalidate>
+            <div>
+                <label for="username" class="form-label">username</label>
+                <input name="username" type="text"  class="form-control" required />
+                <div class="valid-feedback">username look's good!</div>
+            </div>
+            <div>
+                <label for="email" class="form-label">email</label>
+                <input name="email" type="text"  class="form-control" required />
+            </div>
+            <div>
+                <label for="password" class="form-label">password</label>
+                <input name="password" type="text"  class="form-control" required />
+                <div class="valid-feedback">Password look's good!</div>
+            </div>
+            <br>
+            <button class="btn btn-success">SignUp</button>
+        </form>
+    </div>
+</div>  

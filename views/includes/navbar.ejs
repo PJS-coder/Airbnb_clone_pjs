@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white bg-white shadow-sm py-3  sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/listings"><i class="fa-solid fa-map-location-dot"></i> &nbsp; PJS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#simpleNavbar" aria-controls="simpleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="simpleNavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/listings">Explore</a>
+        </li>
+      </ul>
+    <div class="mx-auto">
+      <form class="search-bar d-flex" action="#" method="GET">
+        <input
+          type="text"
+          name="q"
+          class="form-control"
+          placeholder="Search Destinations"
+          aria-label="Search"
+        />
+        <button class="btn btn-primary px-4" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+      <!-- Auth Buttons -->
+      <div class="d-flex gap-2">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"><li><a class="nav-link" href="/listings/new">Airbnb your home</a></li></ul>
+        <% if(!currUser){ %>
+          <a class="btn" href="/login"><b>Login</b></a>
+          <a class="btn" href="/signup"><b>Signup</b></a>
+        <% } %>
+        <% if(currUser){ %>
+          <a class="btn btn-danger btn-custom" href="/logout"><b>Logout</b></a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>

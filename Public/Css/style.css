@@ -1,0 +1,125 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    cursor : url("R.png"),auto;
+}
+
+.container{
+  flex: 1;
+}
+
+.navbar-brand {
+      font-weight: bold !important;
+      font-size: 1.5rem !important;
+      color: #ff385c !important; 
+    }
+    .navbar-nav .nav-link {
+      font-weight: 500;
+    }
+
+.listing-card{
+  border: none !important;
+  margin-bottom: 2.3rem;
+}
+
+.card-img-top{
+  border-radius: 2 rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text{
+  padding-top: 10px;
+}
+
+.card-text p{
+  font-weight: 400 !important;
+}
+
+
+.card img{
+  border-radius: 14px !important;
+}
+
+.card-img-overlay:hover{
+  opacity: 0.16;
+  background-color: white;
+}
+
+.btn-add{
+  background-color: #ff385c !important;
+  border: none !important;
+}
+
+.show-img{
+  height: 30vh;
+}
+
+.btns{
+  display: flex ;
+}
+
+.card-body p {
+  margin-bottom: 0 ;
+}
+
+.btn-card-img{
+  padding-right: 0 ;
+  padding-left: 0;
+  margin-bottom: 0 !important;
+}        
+
+/* new one */
+.navbar-brand {
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: #333;
+    }
+    .nav-link {
+      color: #333 !important;
+      font-weight: 500;
+    }
+    .nav-link:hover {
+      color: #007bff !important;
+    }
+    .btn-custom {
+      font-weight: 500;
+    }
+
+    #map {
+  height: 100%;
+}
+.search-bar {
+      max-width: 500px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 6px;
+    }
+
+    .search-bar input {
+      border: none;
+      border-radius: 50px 0 0 50px;
+      padding-left: 20px;
+    }
+
+    .search-bar input:focus {
+      box-shadow: none;
+    }
+
+    .search-bar button {
+      border-radius: 0 50px 50px 0;
+      background: #ff385c;
+      border: none !important;
+    }
+
+    .btnsearch{
+      background: #ff385c;
+    }
