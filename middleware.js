@@ -30,15 +30,16 @@ module.exports.isOwner = async(req, res, next) => {
     next();
 };
 
-module.exports.validateListing = async(req, res, next) =>{
-    let {error} = listingSchema.validate(req.body);
-        if(error){
-            let errMsg = error.details.map((el) => el.message).join(",");
-            throw new expressError(400,errMsg);
-        }else{
-            next();
-        }
-};
+module.exports.validateListing = (req, res, next) => {
+    const { error } = listingSchema.validate(req.body);
+    if (error) {
+        const errMsg = error.details.map(el => el.message).join(',');
+        throw new expressError(400, errMsg);
+    } else {
+        next();
+    }
+}
+
 
 module.exports.validateReview = async(req, res, next) => {
     let {error} = reviewSchema.validate(req.body);

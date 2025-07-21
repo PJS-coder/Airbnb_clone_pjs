@@ -32,12 +32,6 @@
 
 <div id="filters">
     <div class="filter">
-        <a  href="/listings/category/trending" style="text-decoration: none; color: black;">
-            <div><i class="fa-solid fa-fire"></i></div>
-            <p>Trending</p>
-        </a>
-    </div>
-    <div class="filter">
         <a  href="/listings/category/rooms" style="text-decoration: none; color: black;">
             <div><i class="fa-solid fa-bed"></i></div>
             <p>Rooms</p>
@@ -97,6 +91,12 @@
             <p>Beach view</p>
         </a>
     </div>
+    <div class="filter">
+        <a  href="/listings/category/other" style="text-decoration: none; color: black;">
+            <div><i class="fa-brands fa-elementor"></i></div>
+            <p>Others</p>
+        </a>
+    </div>
 
     <div class="tax-toggle">
         <div class="form-check-reverse form-switch">
@@ -106,6 +106,7 @@
     </div>
 
 </div>
+<br>
 
 <div class="row row-cols-lg-3 row-cols-mid-3 row-cols-sm-1">
     <% for(let listing of allListing){ %>

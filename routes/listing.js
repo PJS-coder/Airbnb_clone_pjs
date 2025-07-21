@@ -40,5 +40,16 @@ router.get('/category/:category', async (req, res) => {
     }
 });
 
+router.post("/", async (req, res) => {
+    try {
+        const newListing = new Listing(req.body);
+        await newListing.save();
+        res.redirect(`/listings/${newListing._id}`);
+    } catch (e) {
+        console.error(e);
+        res.send("Error creating listing");
+    }
+});
+
 
 module.exports = router;

@@ -29,7 +29,7 @@ const listingSchema=new Schema({
     },
     category : {
         type :String,
-        enum : ["trending","rooms","iconic-cities","mountains","castles","pools","camping","farms","arcitic","beach","boat"],
+        enum : ["others","rooms","iconic-cities","mountains","castles","pools","camping","farms","arcitic","beach","boat"],
     },
 });
 
